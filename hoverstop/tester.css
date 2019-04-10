@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	background-color: rgba(1,15,96,1.00)
+}
+
+
+
+.planet {
+	/*this class is for all planets, then each of them will get an id that just contorls their specific attributes.*/
+	position: absolute;
+	top: 50%;
+  	transform: translate(-50%/*x-axis translation*/, -50%/*y-axis translation*/);/*This works by moving the image so that it is positioned based on the center, not the corner of the image.*/
+}
+
+#hoverbox {
+	/*background-color: yellow;*/
+	width: 5000px;
+	height:40%;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+  	transform: translate(-50%/*x-axis translation*/, -50%/*y-axis translation*/);/*This works by moving the image so that it is positioned based on the center, not the corner of the image.*/
+}
+
+
+#sun {
+	left: 50%;
+	width: 500px;
+	height: 500px;
+}
+
+#mercury {
+	left: 41.5%;
+	animation-name: mercuryorbit;
+	animation-duration: 5.16s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	animation-timing-function: linear;
+	
+}
+
+#venus {
+	left: 36.9%;
+	animation-name: venusorbit;
+	animation-duration: 5.5s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	animation-timing-function: linear;
+}
+
+#earth {
+	left: 31.7%;
+	animation-name: earthorbit;
+	animation-duration: 5.8s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	animation-timing-function: linear;
+}
+
+#mars {
+	left: 26.4%;
+	animation-name: marsorbit;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	animation-timing-function: linear;
+}
+
+#jupiter {
+	left: 20.5%;
+	animation-name: jupiterorbit;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	animation-timing-function: linear;
+}
+
+#saturn {
+	left: 14%;
+	animation-name: saturnorbit;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	animation-timing-function: linear;
+}
+
+#uranus {
+	left: 8.3%;
+	animation-name: uranusorbit;
+	animation-duration: 35s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	animation-timing-function: linear;
+}
+
+#neptune {
+	left: 3%;
+	animation-name: neptuneorbit;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	animation-timing-function: linear;
+}
+
+@media only screen and (max-width: 5000px) {
+	body {
+	background-color: rgba(1,15,96,1.00)
+	}
+	#sun {
+	width: 150pt;
+	height: 150pt;
+	left: 50%;
+	}
+
+	#mercury {
+		width: 49pt;
+		height: 49pt;
+		left: 41.5%;
+		/*animation-name: mercuryorbit;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;*/
+	}
+
+	#venus {
+		width: 54pt;
+		height: 54pt;
+		left: 36.9%;
+	}
+
+	#earth {
+		width: 62pt;
+		height: 62pt;
+		left: 31.7%;
+	}
+
+	#mars {
+		width: 54pt;
+		height: 54pt;
+		left: 26.4%;
+	}
+
+	#jupiter {
+		width: 80pt;
+		height: 80pt;
+		left: 20.5%;
+	}
+
+	#saturn {
+		width: 72pt;
+		height: 50pt;
+		left: 14%;
+	}
+
+	#uranus {
+		width: 54pt;
+		height: 56pt;
+		left: 8.3%;
+	}
+
+	#neptune {
+		width: 53pt;
+		height: 52pt;
+		left: 3%;
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	body {
+		background-color: lightblue;
+	  }
+	#sun {
+		width: 130pt;
+		height: 130pt;
+		left: 50%;
+	  }
+
+	#mercury {
+		width: 39pt;
+		height: 39pt;
+		left: 41.5%;
+		/*animation-name: mercuryorbit;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;*/
+	}
+
+	#venus {
+		width: 45pt;
+		height: 45pt;
+		left: 36.9%;
+	}
+
+	#earth {
+		width: 52pt;
+		height: 52pt;
+		left: 31.7%;
+	}
+
+	#mars {
+		width: 44pt;
+		height: 44pt;
+		left: 26.4%;
+	}
+
+	#jupiter {
+		width: 70pt;
+		height: 70pt;
+		left: 20.5%;
+	}
+
+	#saturn {
+		width: 62pt;
+		height: 40pt;
+		left: 14%;
+	}
+
+	#uranus {
+		width: 44pt;
+		height: 46pt;
+		left: 8.3%;
+	}
+
+	#neptune {
+		width: 43pt;
+		height: 42pt;
+		left: 3%;
+	}
+}
+
+@media only screen and (max-width : 1370px ){
+	body {
+		background-color: green;
+	  }
+	#sun {
+		width: 110pt;
+		height: 110pt;
+		left: 50%;
+	  }
+
+	#mercury {
+		width: 33pt;
+		height: 33pt;
+		left: 41%;
+		/*animation-name: mercuryorbit;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;*/
+	}
+
+	#venus {
+		width: 38pt;
+		height: 38pt;
+		left: 36%;
+	}
+
+	#earth {
+		width: 44pt;
+		height: 44pt;
+		left: 30.5%;
+	}
+
+	#mars {
+		width: 37pt;
+		height: 37pt;
+		left: 25.5%;
+	}
+
+	#jupiter {
+		width: 60pt;
+		height: 60pt;
+		left: 19%;
+	}
+
+	#saturn {
+		width: 48pt;
+		height: 32pt;
+		left: 12.5%;
+	}
+
+	#uranus {
+		width: 37pt;
+		height: 39pt;
+		left: 7.5%;
+	}
+
+	#neptune {
+		width: 37pt;
+		height: 35pt;
+		left: 3%;
+	}
+}
+
+@media only screen and (max-width: 1180px) {
+	body {
+		background-color: deeppink;
+	  }
+	#sun {
+		width: 100pt;
+		height: 100pt;
+		left: 50%;
+	  }
+
+	#mercury {
+		width: 33pt;
+		height: 33pt;
+		left: 41%;
+		/*animation-name: mercuryorbit;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;*/
+	}
+
+	#venus {
+		width: 38pt;
+		height: 38pt;
+		left: 36%;
+	}
+
+	#earth {
+		width: 44pt;
+		height: 44pt;
+		left: 30.5%;
+	}
+
+	#mars {
+		width: 37pt;
+		height: 37pt;
+		left: 25.5%;
+	}
+
+	#jupiter {
+		width: 60pt;
+		height: 60pt;
+		left: 19%;
+	}
+
+	#saturn {
+		width: 44pt;
+		height: 30pt;
+		left: 12.5%;
+	}
+
+	#uranus {
+		width: 37pt;
+		height: 39pt;
+		left: 7.5%;
+	}
+
+	#neptune {
+		width: 37pt;
+		height: 35pt;
+		left: 3%;
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+	body {
+		background-color: rebeccapurple;
+	  }
+	#sun {
+		width: 85pt;
+		height: 85pt;
+		left: 50%;
+	  }
+
+	#mercury {
+		width: 28pt;
+		height: 28pt;
+		left: 41%;
+		/*animation-name: mercuryorbit;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;*/
+	}
+
+	#venus {
+		width: 32pt;
+		height: 32pt;
+		left: 36%;
+	}
+
+	#earth {
+		width: 37pt;
+		height: 37pt;
+		left: 30.5%;
+	}
+
+	#mars {
+		width: 31pt;
+		height: 31pt;
+		left: 25.5%;
+	}
+
+	#jupiter {
+		width: 51pt;
+		height: 51pt;
+		left: 19%;
+	}
+
+	#saturn {
+		width: 40pt;
+		height: 27pt;
+		left: 12.75%;
+	}
+
+	#uranus {
+		width: 31pt;
+		height: 33pt;
+		left: 7.5%;
+	}
+
+	#neptune {
+		width: 31pt;
+		height: 30pt;
+		left: 3%;
+	}
+
+}
+
+@keyframes mercuryorbit {
+	0% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 41.5%; z-index: 1;}
+	21%{transform: scale(2,2); top:49%;}
+	49% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 58.5%; z-index: 1;}
+	50% {z-index: -1;}
+	70%{transform: scale(0.5,0.5);top: 45%}
+	99% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 41.5%; z-index: -1;}
+	99.5% {z-index: -1;}
+	100%{z-index: 1;}
+}
+
+@keyframes mercuryrevert {
+	to {left: 41.5%}
+}
+
+@keyframes venusorbit {
+	0% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 36.9%; z-index: 2;}
+	21%{transform: scale(2.5,2.5); top: 47%;}
+	49% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 63.1%; z-index: 2;}
+	50% {z-index: -2;}
+	70%{transform: scale(0.4,0.4); top: 45%;}
+	99% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 36.9%; z-index: -2;}
+	99.5% {z-index: -2;}
+	100%{z-index: 2;}
+}
+@keyframes earthorbit {
+	0% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 31.7%; z-index: 2;}
+	21%{transform: scale(3,3); top: 46%;}
+	49% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 68.3%; z-index: 2;}
+	50% {z-index: -2;}
+	70%{transform: scale(0.3,0.3); top: 45%;}
+	99% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 31.7%; z-index: -2;}
+	99.5% {z-index: -2;}
+	100%{z-index: 2;}
+}
+@keyframes marsorbit {
+	0% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 26.4%; z-index: 2;}
+	21%{transform: scale(3.5,3.5); top: 45%;}
+	49% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 73.6%; z-index: 2;}
+	50% {z-index: -2;}
+	70%{transform: scale(0.29,0.29); top: 46%;}
+	99% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 26.4%; z-index: -2;}
+	99.5% {z-index: -2;}
+	100%{z-index: 2;}
+}
+@keyframes jupiterorbit {
+	0% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 20.5%; z-index: 2;}
+	21%{transform: scale(4,4);top: 46%;}
+	49% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 79.5%; z-index: 2;}
+	50% {z-index: -2;}
+	70%{transform: scale(0.25,0.25); top: 45%;}
+	99% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 20.5%; z-index: -2;}
+	99.5% {z-index: -2;}
+	100%{z-index: 2;}
+}
+@keyframes saturnorbit {
+	0% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 14%; z-index: 2;}
+	21%{transform: scale(4.5,4.5);top: 45.5%;}
+	49% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 86%; z-index: 2;}
+	50% {z-index: -2;}
+	70%{transform: scale(0.22,0.22);top: 45%;}
+	99% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 14%; z-index: -2;}
+	99.5% {z-index: -2;}
+	100%{z-index: 2;}
+}
+@keyframes uranusorbit {
+	0% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 8.3%; z-index: 2;}
+	21%{transform: scale(5,5);top: 45%;}
+	49% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 91.7%; z-index: 2;}
+	50% {z-index: -2;}
+	70%{transform: scale(0.2,0.2);top: 45%;}
+	99% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 8.3%; z-index: -2;}
+	99.5% {z-index: -2;}
+	100%{z-index: 2;}
+}
+@keyframes neptuneorbit {
+	0% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 3%; z-index: 2;}
+	21%{transform: scale(5.5,5.5);top: 46%;}
+	49% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 97%; z-index: 2;}
+	50% {z-index: -2;}
+	70%{transform: scale(0.18,0.18);top: 45%;}
+	99% {position: absolute; top: 50%; transform: translate(-50%, -50%); left: 3%; z-index: -2;}
+	99.5% {z-index: -2;}
+	100%{z-index: 2;}
+}

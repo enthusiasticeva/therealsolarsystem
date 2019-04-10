@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: rgba(1,15,96,1.00)
+}
+
+
+
+.planet {
+	/*this class is for all planets, then each of them will get an id that just contorls their specific attributes.*/
+	position: absolute;
+	top: 50%;
+  	transform: translate(-50%/*x-axis translation*/, -50%/*y-axis translation*/);/*This works by moving the image so that it is positioned based on the center, not the corner of the image.*/
+}
+
+
+#sun {
+	width: 150pt;
+	height: 150pt;
+	left: 50%;
+}
+
+#mercury {
+	width: 49pt;
+	height: 49pt;
+	left: 41.5%;
+	/*animation-name: mercuryorbit;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;*/
+}
+
+#venus {
+	width: 54pt;
+	height: 54pt;
+	left: 36.9%;
+}
+
+#earth {
+	width: 62pt;
+	height: 62pt;
+	left: 31.7%;
+}
+
+#mars {
+	width: 54pt;
+	height: 54pt;
+	left: 26.4%;
+}
+
+#jupiter {
+	width: 80pt;
+	height: 80pt;
+	left: 20.5%;
+}
+
+#saturn {
+	width: 72pt;
+	height: 50pt;
+	left: 14%;
+}
+
+#uranus {
+	width: 54pt;
+	height: 56pt;
+	left: 8.3%;
+}
+
+#neptune {
+	width: 53pt;
+	height: 52pt;
+	left: 3%;
+}
+
+@keyframes mercuryorbit {
+	0% {position: absolute;
+	top: 50%;
+  	transform: translate(-50%/*x-axis translation*/, -50%/*y-axis translation*/);/*This works by moving the image so that it is positioned based on the center, not the corner of the image.*/left: 41.5%}
+	100% {position: absolute;
+	top: 50%;
+  	transform: translate(-50%/*x-axis translation*/, -50%/*y-axis translation*/);/*This works by moving the image so that it is positioned based on the center, not the corner of the image.*/left: 58.5%}
+}
